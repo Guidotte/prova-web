@@ -1,0 +1,219 @@
+/* ==========================================================================
+   DEVHUB - FOLHA DE ESTILOS BASE
+   AVISO AO ALUNO:
+   - Todas as cores, fontes, bordas e espaçamentos básicos já estão definidos.
+   - Sua tarefa é APENAS adicionar regras de LAYOUT (Flexbox e CSS Grid)
+     nos locais explicitamente indicados pelos comentários!
+   ========================================================================== */
+
+/* --- CONFIGURAÇÕES GERAIS E TIPOGRAFIA --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* --- ESTILIZAÇÃO DO CABEÇALHO --- */
+.main-header {
+    background-color: #B20000;
+    color: #ffffff;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.main-header nav p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.main-header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- ESTILIZAÇÃO DAS SEÇÕES / CARTÕES --- */
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.info-section,
+.info-section{
+    background-color: #ffffff;
+    padding: 1.75rem;
+    border-radius: 8px;
+    border-top: 4px solid #B20000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.schedule-section {
+    grid-column: 1 / -1;
+    background-color: #ffffff;
+    padding: 1.75rem;
+    border-radius: 8px;
+    border-top: 4px solid #B20000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+h3 {
+    color: #4b5563;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- ESTILIZAÇÃO DE LISTAS --- */
+.info-section ul {
+    padding-left: 1.25rem;
+    color: #4b5563;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- ESTILIZAÇÃO DE FORMULÁRIOS --- */
+.form-group {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    margin-bottom: 0.75rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #B20000;
+    background-color: #ffffff;
+}
+button[type="submit"] {
+    background-color: #B20000;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #800000;
+}
+
+/* --- ESTILIZAÇÃO DE TABELAS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+th {
+    background-color: #1f2937;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* --- ESTILIZAÇÃO DO RODAPÉ --- */
+footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   PREENCHER A PARTIR DAQUI
+   ATENÇÃO: Utilize APENAS propriedades de FLEXBOX e CSS GRID LAYOUT.
+   ========================================================================== */
+
+/* TAREFA 4: ALINHAMENTO DO CABEÇALHO COM FLEXBOX */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+/* TAREFA 5: ORGANIZAÇÃO GERAL DA PÁGINA COM CSS GRID LAYOUT */
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.schedule-section {
+    grid-column: 1 / -1;
+}

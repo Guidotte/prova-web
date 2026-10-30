@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub - Portal de Eventos e Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        
+        <!-- Cabeçalho -->
+        <header class="main-header">
+            <div>
+                <h1>DevHub</h1>
+                <p>Portal de Eventos e Tecnologias</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#inscricao">Inscrição</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-container"> 
+        <!-- Seção de Informações / Apresentação -->
+        <section class="info-section">
+            <h2>Bem-vindo ao DevHub</h2>
+            <p>Conectamos desenvolvedores, estudantes e entusiastas de tecnologia aos melhores workshops e simpósios da região.</p>
+            
+            <h3>Por que participar dos nossos eventos?</h3>
+            
+            <!-- TAREFA 1: Lista de Benefícios (HTML5) -->
+            <ul class="benefits-list">
+                <li>Networking com profissionais e empresas da região de Araras;</li>
+                <li>Workshops práticos sobre as tecnologias mais requisitadas no mercado;</li>
+                <li>Certificado de participação emitido pela plataforma;</li>
+                <li>Acesso a materiais de estudo e código-fonte das palestras.</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Formulário de Inscrição -->
+        <section class="form-section">
+            <h2>Inscreva-se no Próximo Workshop</h2>
+            
+            <!-- TAREFA 2: Formulário de Inscrição (HTML5) -->
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="area">Área de Interesse:</label>
+                    <select id="area" name="area" required>
+                        <option value="" disabled selected>Selecione uma área...</option>
+                        <option value="frontend">Desenvolvimento Front-End</option>
+                        <option value="backend">Desenvolvimento Back-End</option>
+                        <option value="mobile">Desenvolvimento Mobile</option>
+                        <option value="devops">DevOps & Cloud</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Garantir Minha Vaga</button>
+            </form>
+        </section>
+
+        <!-- Seção de Programação das Palestras -->
+        <section class="schedule-section">
+            <h2>Programação das Palestras</h2>
+            
+            <!-- TAREFA 3: Tabela Semântica de Programação (HTML5) -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Palestra / Workshop</th>
+                        <th>Palestrante</th>
+                        <th>Sala</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19:00 - 19:45</td>
+                        <td>Construindo Layouts Modernos com Flexbox e Grid</td>
+                        <td>Prof. Dr. Carlos Silva</td>
+                        <td>Lab 01</td>
+                    </tr>
+                    <tr>
+                        <td>19:45 - 20:30</td>
+                        <td>Boas Práticas de Versionamento com Git e GitHub</td>
+                        <td>Ingrid Oliveira (Tech Lead)</td>
+                        <td>Lab 02</td>
+                    </tr>
+                    <tr>
+                        <td>20:45 - 21:30</td>
+                        <td>JavaScript Assíncrono e Consumo de APIs REST</td>
+                        <td>Lucas Pereira (Dev Senior)</td>
+                        <td>Auditório</td>
+                    </tr>
+                    <tr>
+                        <td>21:30 - 22:15</td>
+                        <td>Mesa Redonda: O Mercado de Trabalho em DSM</td>
+                        <td>Convidados Especiais</td>
+                        <td>Auditório</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p> 2026 DevHub - Faculdade de Tecnologia de Araras (FATEC). Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html
